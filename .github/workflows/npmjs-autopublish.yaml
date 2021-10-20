@@ -25,8 +25,9 @@ jobs:
         with:
           # NPM version shouldn't matter, just use the LTS.
           node-version: 'lts/*'
-          # This is set inside the package.json in case it needs to be set per-package
-          # registry-url: 'https://npm.pkg.github.com'
+          always-auth: true
+          registry-url: https://npm.pkg.github.com
+          scope: '@itcig'
 
       - name: Publish
         env:
