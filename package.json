@@ -1,17 +1,16 @@
 {
 	"name": "@itcig/eslint-config-cig",
-	"version": "1.1.14-alpha.1",
+	"version": "1.1.14-alpha.2",
 	"license": "MIT",
 	"description": "CIG's base JS ESLint config, following our styleguide",
 	"author": {
 		"name": "ITCIG",
 		"email": "it@capinfogroup.com"
 	},
-	"homepage": "https://github.com/itcig/itcig#readme",
+	"homepage": "https://github.com/itcig/eslint-config-cig#readme",
 	"repository": {
 		"type": "git",
-		"url": "git+https://github.com/itcig/itcig.git",
-		"directory": "packages/js-packages/eslint-config-cig"
+		"url": "git+https://github.com/itcig/eslint-config-cig.git"
 	},
 	"main": "dist/index.js",
 	"typings": "dist/typings/index.d.ts",
@@ -20,7 +19,7 @@
 	],
 	"publishConfig": {
 		"access": "public",
-		"registry": "https://npm.pkg.github.com/",
+		"@itcig:registry": "https://npm.pkg.github.com/",
 		"tag": "latest"
 	},
 	"scripts": {
@@ -31,7 +30,7 @@
 		"type:gen": "tsc -p ./tsconfig.gentypes.json"
 	},
 	"devDependencies": {
-		"@itcig/utils": "1.1.12",
+		"@itcig/utils": "^1.1.12",
 		"@prettier/plugin-php": "^0.17.2",
 		"@typescript-eslint/eslint-plugin": "^2.18.0",
 		"@typescript-eslint/parser": "^2.18.0",
