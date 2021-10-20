@@ -31,14 +31,6 @@ jobs:
           registry-url: https://npm.pkg.github.com
           scope: '@itcig'
 
-      - name: Install
-        env:
-          NODE_AUTH_TOKEN: ${{ secrets.API_TOKEN_GITHUB }}
-        run: yarn install --frozen-lockfile --ignore-scripts
-
-      - name: Build
-        run: yarn build
-
       - name: Publish
         env:
           NODE_AUTH_TOKEN: ${{ secrets.API_TOKEN_GITHUB }}
