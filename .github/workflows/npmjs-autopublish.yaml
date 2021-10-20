@@ -5,6 +5,9 @@ on:
     tags:
       - 'v*'
 
+env:
+  NODE_VERSION: "16.9.1"
+
 jobs:
   publish:
     name: Publish
@@ -23,13 +26,20 @@ jobs:
 
       - uses: actions/setup-node@v2
         with:
-          # NPM version shouldn't matter, just use the LTS.
-          node-version: 'lts/*'
+          node-version: ${{ env.NODE_VERSION }}
           always-auth: true
           registry-url: https://npm.pkg.github.com
           scope: '@itcig'
 
+      - name: Install
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.API_TOKEN_GITHUB }}
+        run: yarn install --frozen-lockfile --ignore-scripts
+
+      - name: Build
+        run: yarn build
+
       - name: Publish
         env:
           NODE_AUTH_TOKEN: ${{ secrets.API_TOKEN_GITHUB }}
-        run: npm publish
+        run: yarn publish

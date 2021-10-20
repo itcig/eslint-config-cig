@@ -1,6 +1,6 @@
 {
 	"name": "@itcig/eslint-config-cig",
-	"version": "1.1.14-alpha.3",
+	"version": "1.1.14-alpha.5",
 	"license": "MIT",
 	"description": "CIG's base JS ESLint config, following our styleguide",
 	"author": {
