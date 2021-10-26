@@ -1,6 +1,6 @@
 {
 	"name": "@itcig/eslint-config-cig",
-	"version": "1.1.16",
+	"version": "1.1.17",
 	"license": "MIT",
 	"description": "CIG's base JS ESLint config, following our styleguide",
 	"author": {
@@ -28,7 +28,7 @@
 		"type:gen": "tsc -p ./tsconfig.gentypes.json"
 	},
 	"devDependencies": {
-		"@itcig/utils": "^1.1.12",
+		"@itcig/utils": "1.1.12",
 		"@prettier/plugin-php": "^0.17.2",
 		"@typescript-eslint/eslint-plugin": "^2.18.0",
 		"@typescript-eslint/parser": "^2.18.0",
