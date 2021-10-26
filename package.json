@@ -1,0 +1,76 @@
+{
+	"name": "@itcig/eslint-config-cig",
+	"version": "1.1.16",
+	"license": "MIT",
+	"description": "CIG's base JS ESLint config, following our styleguide",
+	"author": {
+		"name": "ITCIG",
+		"email": "it@capinfogroup.com"
+	},
+	"homepage": "https://github.com/itcig/eslint-config-cig#readme",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/itcig/eslint-config-cig.git"
+	},
+	"main": "dist/index.js",
+	"typings": "dist/typings/index.d.ts",
+	"files": [
+		"dist"
+	],
+	"publishConfig": {
+		"access": "public"
+	},
+	"scripts": {
+		"prebuild": "rm -rf dist",
+		"build": "tsc -p ./tsconfig.build.json",
+		"lint": "eslint --report-unused-disable-directives .",
+		"type:check": "tsc -p ./tsconfig.check.json",
+		"type:gen": "tsc -p ./tsconfig.gentypes.json"
+	},
+	"devDependencies": {
+		"@itcig/utils": "^1.1.12",
+		"@prettier/plugin-php": "^0.17.2",
+		"@typescript-eslint/eslint-plugin": "^2.18.0",
+		"@typescript-eslint/parser": "^2.18.0",
+		"babel-eslint": "^10.1.0",
+		"babel-preset-proposal-typescript": "^2.2.0",
+		"eslint": "^7.25.0",
+		"eslint-config-airbnb": "^18.0.1",
+		"eslint-config-prettier": "^8.3.0",
+		"eslint-import-resolver-alias": "^1.1.2",
+		"eslint-mdx": "^1.6.8",
+		"eslint-plugin-import": "^2.20.0",
+		"eslint-plugin-jest": "^24.4.0",
+		"eslint-plugin-jsx-a11y": "^6.2.3",
+		"eslint-plugin-markdown": "^1.0.0",
+		"eslint-plugin-mdx": "^1.6.8",
+		"eslint-plugin-no-use-extend-native": "^0.4.1",
+		"eslint-plugin-node": "^11.0.0",
+		"eslint-plugin-prettier": "^3.4.0",
+		"eslint-plugin-promise": "^4.2.1",
+		"eslint-plugin-react": "^7.18.0",
+		"eslint-plugin-react-hooks": "^2.3.0",
+		"eslint-plugin-unicorn": "^15.0.1"
+	},
+	"bugs": {
+		"url": "https://github.com/itcig/itcig/issues"
+	},
+	"keywords": [
+		"eslint",
+		"eslintconfig",
+		"config",
+		"javascript",
+		"styleguide",
+		"es2015",
+		"es2016",
+		"es2017",
+		"es2018",
+		"esnext"
+	],
+	"extra": {
+		"autotagger": true,
+		"autorelease": true,
+		"npmjs-autopublish": true,
+		"mirror-repo": "itcig/eslint-config-cig"
+	}
+}
