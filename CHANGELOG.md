@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file. See
 [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+### [1.3.2](https://github.com/itcig/itcig/compare/@itcig/eslint-config-cig@1.3.1...@itcig/eslint-config-cig@1.3.2) (2021-10-27)
+
+**Note:** Version bump only for package @itcig/eslint-config-cig
+
+# Change Log
+
+All notable changes to this project will be documented in this file. See
+[Conventional Commits](https://conventionalcommits.org) for commit guidelines.
+
 ### [1.3.1](https://github.com/itcig/itcig/compare/@itcig/eslint-config-cig@1.3.0...@itcig/eslint-config-cig@1.3.1) (2021-10-27)
 
 **Note:** Version bump only for package @itcig/eslint-config-cig
