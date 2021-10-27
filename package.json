@@ -1,6 +1,6 @@
 {
 	"name": "@itcig/eslint-config-cig",
-	"version": "1.2.0",
+	"version": "1.3.0",
 	"license": "MIT",
 	"description": "CIG's base ESLint config, following our styleguide",
 	"author": {
@@ -28,8 +28,6 @@
 		"type:gen": "tsc -p ./tsconfig.gentypes.json"
 	},
 	"devDependencies": {
-		"@itcig/utils": "^1.1.12",
-		"@prettier/plugin-php": "^0.17.2",
 		"@typescript-eslint/eslint-plugin": "^2.18.0",
 		"@typescript-eslint/parser": "^2.18.0",
 		"babel-eslint": "^10.1.0",
@@ -44,6 +42,7 @@
 		"eslint-plugin-jsx-a11y": "^6.2.3",
 		"eslint-plugin-markdown": "^1.0.0",
 		"eslint-plugin-mdx": "^1.6.8",
+		"eslint-plugin-mocha": "^9.0.0",
 		"eslint-plugin-no-use-extend-native": "^0.4.1",
 		"eslint-plugin-node": "^11.0.0",
 		"eslint-plugin-prettier": "^3.4.0",

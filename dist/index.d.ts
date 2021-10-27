@@ -14,13 +14,7 @@ export declare namespace env {
 export declare const plugins: string[];
 export declare const parser: string;
 export declare const rules: {
-    'jest/expect-expect': string;
-    'jest/lowercase-name': string;
-    'jest/prefer-to-be-null': string;
-    'jest/prefer-to-contain': string;
-    'jest/prefer-strict-equal': string;
-    'jest/prefer-to-have-length': string;
-    'jest/prefer-to-be-undefined': string;
+    'mocha/no-mocha-arrows': string;
     'react-hooks/rules-of-hooks': string;
     'react/jsx-filename-extension': (string | {
         extensions: string[];
