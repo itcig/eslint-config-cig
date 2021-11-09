@@ -109,6 +109,7 @@ module.exports = {
                 ],
             },
         ],
+        'import/no-extraneous-dependencies': 'off',
     },
 };
 //# sourceMappingURL=index.js.map
