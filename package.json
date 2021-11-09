@@ -1,6 +1,6 @@
 {
 	"name": "@itcig/eslint-config-cig",
-	"version": "1.4.0",
+	"version": "1.4.1",
 	"license": "MIT",
 	"description": "CIG's base ESLint config, following our styleguide",
 	"author": {
@@ -28,17 +28,16 @@
 		"type:gen": "tsc -p ./tsconfig.gentypes.json"
 	},
 	"dependencies": {
+		"@itcig/babel-preset": "^1.1.11",
 		"@typescript-eslint/eslint-plugin": "^2.18.0",
 		"@typescript-eslint/parser": "^2.18.0",
 		"babel-eslint": "^10.1.0",
-		"babel-preset-proposal-typescript": "^2.2.0",
 		"eslint": "^7.25.0",
 		"eslint-config-airbnb": "^18.0.1",
 		"eslint-config-prettier": "^8.3.0",
 		"eslint-import-resolver-alias": "^1.1.2",
 		"eslint-mdx": "^1.6.8",
 		"eslint-plugin-import": "^2.20.0",
-		"eslint-plugin-jest": "^24.4.0",
 		"eslint-plugin-jsx-a11y": "^6.2.3",
 		"eslint-plugin-markdown": "^1.0.0",
 		"eslint-plugin-mdx": "^1.6.8",

@@ -9,7 +9,6 @@ declare const _extends: string[];
 export { _extends as extends };
 export declare namespace env {
     const browser: boolean;
-    const jest: boolean;
 }
 export declare const plugins: string[];
 export declare const parser: string;

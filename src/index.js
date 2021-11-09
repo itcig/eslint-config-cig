@@ -11,7 +11,6 @@ module.exports = {
   extends: ['airbnb', 'plugin:mocha/recommended', 'prettier'],
   env: {
     browser: true,
-    jest: true,
   },
   plugins: ['markdown', 'react-hooks', 'mocha', 'node', 'promise', 'unicorn', 'prettier'],
   parser: 'babel-eslint',
