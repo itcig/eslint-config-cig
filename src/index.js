@@ -109,7 +109,7 @@ module.exports = {
 
     // Prefer the spread operator over `Array.from()`. (fixable)
     // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/master/docs/rules/prefer-spread.md
-    'unicorn/prefer-spread': 'error',
+    'unicorn/prefer-spread': 'off',
 
     // Enforce passing a message value when throwing a built-in error.
     // 'Be explicit' is our motto. Makes errors more useful.
@@ -239,6 +239,10 @@ module.exports = {
         ],
       },
     ],
+
+    // https://github.com/typescript-eslint/typescript-eslint/blob/master/docs/getting-started/linting/FAQ.md#i-get-errors-from-the-no-undef-rule-about-global-variables-not-being-defined-even-though-there-are-no-typescript-errors
+    'no-undef': 'off',
+
     'import/no-extraneous-dependencies': 'off',
   },
 };

@@ -40,7 +40,7 @@ module.exports = {
         'unicorn/import-index': 'off',
         'unicorn/new-for-builtins': 'error',
         'unicorn/regex-shorthand': 'error',
-        'unicorn/prefer-spread': 'error',
+        'unicorn/prefer-spread': 'off',
         'unicorn/error-message': 'error',
         'unicorn/no-unsafe-regex': 'error',
         'unicorn/prefer-add-event-listener': 'error',
@@ -108,6 +108,7 @@ module.exports = {
                 ],
             },
         ],
+        'no-undef': 'off',
         'import/no-extraneous-dependencies': 'off',
     },
 };

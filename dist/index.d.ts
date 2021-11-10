@@ -98,6 +98,7 @@ export declare const rules: {
         props: boolean;
         ignorePropertyModificationsFor: string[];
     })[];
+    'no-undef': string;
     'import/no-extraneous-dependencies': string;
 };
 //# sourceMappingURL=index.d.ts.map
