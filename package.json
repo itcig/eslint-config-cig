@@ -1,6 +1,6 @@
 {
 	"name": "@itcig/eslint-config-cig",
-	"version": "1.5.0",
+	"version": "1.5.1",
 	"license": "MIT",
 	"description": "CIG's base ESLint config, following our styleguide",
 	"author": {
@@ -30,7 +30,7 @@
 	"dependencies": {
 		"@babel/cli": "^7.8.4",
 		"@babel/core": "7.16.0",
-		"@itcig/babel-preset": "^1.1.12",
+		"@itcig/babel-preset": "^1.1.13",
 		"@itcig/typescript-config": "^1.2.5",
 		"@typescript-eslint/parser": "^5.3.1",
 		"babel-eslint": "^10.1.0",
