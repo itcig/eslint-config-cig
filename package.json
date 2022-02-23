@@ -30,8 +30,8 @@
 	"dependencies": {
 		"@babel/cli": "^7.8.4",
 		"@babel/core": "7.16.0",
-		"@itcig/babel-preset": "^1.1.13",
-		"@itcig/typescript-config": "^1.2.5",
+		"@itcig/babel-preset": "1.1.13",
+		"@itcig/typescript-config": "1.2.5",
 		"@typescript-eslint/parser": "^5.3.1",
 		"babel-eslint": "^10.1.0",
 		"eslint": "^7.32.0",
