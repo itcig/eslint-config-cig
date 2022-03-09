@@ -7,21 +7,14 @@ module.exports = {
             },
         },
     },
-    extends: ['airbnb', 'plugin:jest/recommended', 'prettier'],
+    extends: ['airbnb', 'plugin:mocha/recommended', 'prettier'],
     env: {
         browser: true,
-        jest: true,
     },
-    plugins: ['markdown', 'react-hooks', 'jest', 'node', 'promise', 'unicorn', 'prettier'],
+    plugins: ['markdown', 'react-hooks', 'mocha', 'node', 'promise', 'unicorn', 'prettier'],
     parser: 'babel-eslint',
     rules: {
-        'jest/expect-expect': 'error',
-        'jest/lowercase-name': 'error',
-        'jest/prefer-to-be-null': 'error',
-        'jest/prefer-to-contain': 'error',
-        'jest/prefer-strict-equal': 'error',
-        'jest/prefer-to-have-length': 'error',
-        'jest/prefer-to-be-undefined': 'error',
+        'mocha/no-mocha-arrows': 'off',
         'react-hooks/rules-of-hooks': 'error',
         'react/jsx-filename-extension': [
             'error',
@@ -47,7 +40,7 @@ module.exports = {
         'unicorn/import-index': 'off',
         'unicorn/new-for-builtins': 'error',
         'unicorn/regex-shorthand': 'error',
-        'unicorn/prefer-spread': 'error',
+        'unicorn/prefer-spread': 'off',
         'unicorn/error-message': 'error',
         'unicorn/no-unsafe-regex': 'error',
         'unicorn/prefer-add-event-listener': 'error',
@@ -115,6 +108,8 @@ module.exports = {
                 ],
             },
         ],
+        'no-undef': 'off',
+        'import/no-extraneous-dependencies': 'off',
     },
 };
 //# sourceMappingURL=index.js.map

@@ -1,8 +1,8 @@
 {
 	"name": "@itcig/eslint-config-cig",
-	"version": "1.1.16-alpha.0",
+	"version": "1.5.2",
 	"license": "MIT",
-	"description": "CIG's base JS ESLint config, following our styleguide",
+	"description": "CIG's base ESLint config, following our styleguide",
 	"author": {
 		"name": "ITCIG",
 		"email": "it@capinfogroup.com"
@@ -27,30 +27,29 @@
 		"type:check": "tsc -p ./tsconfig.check.json",
 		"type:gen": "tsc -p ./tsconfig.gentypes.json"
 	},
-	"devDependencies": {
-		"@itcig/utils": "1.1.12",
-		"@prettier/plugin-php": "^0.17.2",
-		"@typescript-eslint/eslint-plugin": "^2.18.0",
-		"@typescript-eslint/parser": "^2.18.0",
+	"dependencies": {
+		"@babel/cli": "^7.8.4",
+		"@babel/core": "7.16.0",
+		"@itcig/babel-preset": "1.1.14",
+		"@itcig/typescript-config": "1.2.6",
+		"@typescript-eslint/parser": "^5.3.1",
 		"babel-eslint": "^10.1.0",
-		"babel-preset-proposal-typescript": "^2.2.0",
-		"eslint": "^7.25.0",
+		"eslint": "^7.32.0",
 		"eslint-config-airbnb": "^18.0.1",
 		"eslint-config-prettier": "^8.3.0",
 		"eslint-import-resolver-alias": "^1.1.2",
-		"eslint-mdx": "^1.6.8",
-		"eslint-plugin-import": "^2.20.0",
-		"eslint-plugin-jest": "^24.4.0",
-		"eslint-plugin-jsx-a11y": "^6.2.3",
-		"eslint-plugin-markdown": "^1.0.0",
-		"eslint-plugin-mdx": "^1.6.8",
+		"eslint-plugin-import": "^2.25.2",
+		"eslint-plugin-jsx-a11y": "^6.4.1",
+		"eslint-plugin-markdown": "^2.2.1",
+		"eslint-plugin-mocha": "^9.0.0",
 		"eslint-plugin-no-use-extend-native": "^0.4.1",
-		"eslint-plugin-node": "^11.0.0",
-		"eslint-plugin-prettier": "^3.4.0",
+		"eslint-plugin-node": "^11.1.0",
+		"eslint-plugin-prettier": "^4.0.0",
 		"eslint-plugin-promise": "^4.2.1",
 		"eslint-plugin-react": "^7.18.0",
-		"eslint-plugin-react-hooks": "^2.3.0",
-		"eslint-plugin-unicorn": "^15.0.1"
+		"eslint-plugin-react-hooks": "^4.3.0",
+		"eslint-plugin-unicorn": "^38.0.1",
+		"snyk": "^1.297.2"
 	},
 	"bugs": {
 		"url": "https://github.com/itcig/itcig/issues"

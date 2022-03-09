@@ -8,21 +8,14 @@ module.exports = {
       },
     },
   },
-  extends: ['airbnb', 'plugin:jest/recommended', 'prettier'],
+  extends: ['airbnb', 'plugin:mocha/recommended', 'prettier'],
   env: {
     browser: true,
-    jest: true,
   },
-  plugins: ['markdown', 'react-hooks', 'jest', 'node', 'promise', 'unicorn', 'prettier'],
+  plugins: ['markdown', 'react-hooks', 'mocha', 'node', 'promise', 'unicorn', 'prettier'],
   parser: 'babel-eslint',
   rules: {
-    'jest/expect-expect': 'error',
-    'jest/lowercase-name': 'error',
-    'jest/prefer-to-be-null': 'error',
-    'jest/prefer-to-contain': 'error',
-    'jest/prefer-strict-equal': 'error',
-    'jest/prefer-to-have-length': 'error',
-    'jest/prefer-to-be-undefined': 'error',
+    'mocha/no-mocha-arrows': 'off',
 
     'react-hooks/rules-of-hooks': 'error',
 
@@ -116,7 +109,7 @@ module.exports = {
 
     // Prefer the spread operator over `Array.from()`. (fixable)
     // https://github.com/sindresorhus/eslint-plugin-unicorn/blob/master/docs/rules/prefer-spread.md
-    'unicorn/prefer-spread': 'error',
+    'unicorn/prefer-spread': 'off',
 
     // Enforce passing a message value when throwing a built-in error.
     // 'Be explicit' is our motto. Makes errors more useful.
@@ -246,5 +239,10 @@ module.exports = {
         ],
       },
     ],
+
+    // https://github.com/typescript-eslint/typescript-eslint/blob/master/docs/getting-started/linting/FAQ.md#i-get-errors-from-the-no-undef-rule-about-global-variables-not-being-defined-even-though-there-are-no-typescript-errors
+    'no-undef': 'off',
+
+    'import/no-extraneous-dependencies': 'off',
   },
 };
