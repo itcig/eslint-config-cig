@@ -240,8 +240,31 @@ module.exports = {
       },
     ],
 
+    // disallow certain syntax forms
+    // We retierate these rules here to override the airbnb set which disallows ForOfStatement
+    // https://eslint.org/docs/rules/no-restricted-syntax
+    'no-restricted-syntax': [
+      'error',
+      {
+        selector: 'ForInStatement',
+        message:
+          'for..in loops iterate over the entire prototype chain, which is virtually never what you want. Use Object.{keys,values,entries}, and iterate over the resulting array.',
+      },
+      {
+        selector: 'LabeledStatement',
+        message: 'Labels are a form of GOTO; using them makes code confusing and hard to maintain and understand.',
+      },
+      {
+        selector: 'WithStatement',
+        message: '`with` is disallowed in strict mode because it makes code impossible to predict and optimize.',
+      },
+    ],
+
     // https://github.com/typescript-eslint/typescript-eslint/blob/master/docs/getting-started/linting/FAQ.md#i-get-errors-from-the-no-undef-rule-about-global-variables-not-being-defined-even-though-there-are-no-typescript-errors
     'no-undef': 'off',
+
+    // Allow variable names to begin with an underscore
+    'no-underscore-dangle': 'off',
 
     'import/no-extraneous-dependencies': 'off',
   },

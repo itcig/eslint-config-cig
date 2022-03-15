@@ -98,7 +98,12 @@ export declare const rules: {
         props: boolean;
         ignorePropertyModificationsFor: string[];
     })[];
+    'no-restricted-syntax': (string | {
+        selector: string;
+        message: string;
+    })[];
     'no-undef': string;
+    'no-underscore-dangle': string;
     'import/no-extraneous-dependencies': string;
 };
 //# sourceMappingURL=index.d.ts.map

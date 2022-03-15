@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.6.0](https://github.com/itcig/itcig/compare/@itcig/eslint-config-cig@1.5.2...@itcig/eslint-config-cig@1.6.0) (2022-03-15)
+
+
+### Features
+
+* **eslint-config-cig:** rule edits ([#11](https://github.com/itcig/itcig/issues/11)) ([12bb27f](https://github.com/itcig/itcig/commit/12bb27fe610c3de5178d7641eb4ea1c6b1fc6a00))
+
+
+
 ### 1.5.2 (2022-03-08)
 
 **Note:** Version bump only for package @itcig/eslint-config-cig

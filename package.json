@@ -1,6 +1,6 @@
 {
 	"name": "@itcig/eslint-config-cig",
-	"version": "1.5.2",
+	"version": "1.6.0",
 	"license": "MIT",
 	"description": "CIG's base ESLint config, following our styleguide",
 	"author": {
