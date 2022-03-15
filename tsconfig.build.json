@@ -5,5 +5,5 @@
     "rootDir": "./src",
     "strict": true
   },
-  "include": ["src/**/*.js"]
+  "include": ["src/**/*.ts"]
 }

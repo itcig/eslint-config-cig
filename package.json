@@ -1,6 +1,6 @@
 {
 	"name": "@itcig/eslint-config-cig",
-	"version": "1.6.0",
+	"version": "1.7.0",
 	"license": "MIT",
 	"description": "CIG's base ESLint config, following our styleguide",
 	"author": {
@@ -11,6 +11,10 @@
 	"repository": {
 		"type": "git",
 		"url": "git+https://github.com/itcig/eslint-config-cig.git"
+	},
+	"exports": {
+		".": "./dist/index.js",
+		"./tests": "./dist/tests.js"
 	},
 	"main": "dist/index.js",
 	"typings": "dist/typings/index.d.ts",
@@ -66,6 +70,16 @@
 		"es2018",
 		"esnext"
 	],
+	"typesVersions": {
+		"*": {
+			".": [
+				"dist/index.d.ts"
+			],
+			"./tests": [
+				"dist/tests.d.ts"
+			]
+		}
+	},
 	"extra": {
 		"autotagger": true,
 		"autorelease": true,

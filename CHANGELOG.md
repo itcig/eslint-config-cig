@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.7.0](https://github.com/itcig/itcig/compare/@itcig/eslint-config-cig@1.6.0...@itcig/eslint-config-cig@1.7.0) (2022-03-15)
+
+
+### Features
+
+* **eslint-config-cig:** config for mocha tests ([#17](https://github.com/itcig/itcig/issues/17)) ([c403f30](https://github.com/itcig/itcig/commit/c403f30057cd440cdbabb089d90067688f66654e))
+
+
+
 ## [1.6.0](https://github.com/itcig/itcig/compare/@itcig/eslint-config-cig@1.5.2...@itcig/eslint-config-cig@1.6.0) (2022-03-15)
 
 
